@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MiPrimerApp.iml" filepath="$PROJECT_DIR$/MiPrimerApp.iml" />
+      <module fileurl="file://C:\Users\Karla\AndroidStudioProjects\RelojInternacional\MiPrimerApp.iml" filepath="C:\Users\Karla\AndroidStudioProjects\RelojInternacional\MiPrimerApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RelojInternacional.iml" filepath="$PROJECT_DIR$/.idea/RelojInternacional.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Karla\AndroidStudioProjects\RelojInternacional\app\app.iml" filepath="C:\Users\Karla\AndroidStudioProjects\RelojInternacional\app\app.iml" />
     </modules>
   </component>
 </project>

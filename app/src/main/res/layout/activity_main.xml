@@ -1,111 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#AAA"
     tools:context="com.naldana.miprimerapp.MainActivity">
 
-    <!-- Texto Hora principal -->
+    <!-- Text View Básico -->
     <TextView
-        android:id="@+id/text_hora_principal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/text_hour_example"
-        android:layout_centerInParent="true"
-        android:layout_alignParentTop="true"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:text="@string/text_hour_example" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:textSize="54sp"/>
-    <TextView
-        android:id="@+id/text_ciudad_principal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_city_example"
-        android:layout_below="@id/text_hora_principal"
-        android:layout_centerHorizontal="true"
-        android:textSize="24sp"/>
+        android:gravity="center"
+        android:textColor="#00F"
+        android:textSize="24sp"
+        android:text="@string/text_city_example"/>
 
-    <!-- Linea Horizontal -->
-    <View
-        android:id="@+id/view_linea_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="2dp"
-        android:background="#000"
-        android:layout_margin="10dp"
-        android:layout_below="@id/text_ciudad_principal"/>
-
-    <!-- Horas de ciudad -->
-    <LinearLayout
-        android:id="@+id/linear_city1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/view_linea_horizontal"
-        android:layout_alignLeft="@id/view_linea_horizontal"
-        android:layout_below="@id/view_linea_horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="wrap_content"
-            android:text="@string/text_city_los_angeles"
-            android:textSize="15sp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/text_hour_example"/>
-    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linear_city2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@id/view_linea_horizontal"
-        android:layout_alignLeft="@id/view_linea_horizontal"
-        android:layout_below="@id/linear_city1">
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_city_los_angeles"
-            android:textSize="15sp"/>
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/text_hour_example"/>
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
 
-    <LinearLayout
-        android:id="@+id/linear_city3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/view_linea_horizontal"
-        android:layout_alignLeft="@id/view_linea_horizontal"
-        android:layout_below="@id/linear_city2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Ciudad 1"
+                    android:textSize="24sp" />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="wrap_content"
-            android:text="@string/text_city_los_angeles"
-            android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ciudad 2"
+                    android:layout_margin="8dp"
+                    android:textSize="24sp" />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/text_hour_example"/>
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ciudad 3"
+                    android:layout_margin="8dp"
+                    android:textSize="24sp" />
 
-    <!-- Texto Power View -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:text="@string/power_by_nestor"/>
+            </LinearLayout>
 
-</RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1.98"
+                android:background="#000">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:layout_margin="8dp"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:layout_margin="8dp"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:layout_margin="8dp"
+                    android:textSize="24sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>
